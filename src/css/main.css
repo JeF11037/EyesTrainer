@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --circleRadius: 100px;
+    --cursorSide: 150px;
+}
+
+html, body {
+    background-color: #fff;
+    width: 100%;
+    cursor: crosshair;
+}
+
+.background {
+    width: 100%;
+}
+
+header, footer {
+    color: #000;
+    text-align: center;
+}
+
+header {
+    margin-top: 1rem;
+    font-size: xx-large;
+}
+
+footer {
+    font-size: large;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 800px;
+    height: 800px;
+    border: solid 0.15rem #fff;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+#cursor {
+    position: absolute;
+    width: var(--cursorSide);
+    height: var(--cursorSide);
+    border: double 0.3rem #fff;
+    border-radius: 10%;
+    transition-duration: 100ms;
+}
+
+#circle {
+    position: absolute;
+    width: var(--circleRadius);
+    height: var(--circleRadius);
+    background-color: #fff;
+    border-radius: 50%;
+    transition-duration: 1000ms;
+    pointer-events: none;
+}
