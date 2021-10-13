@@ -51,7 +51,7 @@ function checkTime(){
 
     let seconds = time / 10;
 
-    if (Number.isInteger(seconds /)){
+    if (Number.isInteger(seconds / 10)){
         if (circle.getBoundingClientRect().width >= 20) {
             cursor.style.width = cursor.getBoundingClientRect().width - 14+'px';
             cursor.style.height = cursor.getBoundingClientRect().height - 14+'px';
